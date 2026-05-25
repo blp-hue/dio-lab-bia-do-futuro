@@ -2,40 +2,38 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
-| Arquivo | Formato | Utilização no Agente |
+| Arquivo | Formato | Como a Lyra utiliza? |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `perfil_investidor.json` | JSON | Personalizar recomendações e orçamento de meses futuros |
+| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente com histórico de compra de cada um |
 
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
-
----
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
-
-[Sua descrição aqui]
+> Os dados de produtos financeiros disponíveis não foi preciso, pois não faz parte do objetivo da Lyra
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
+> Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
 
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+``` text
 
+DADOS DO CLIENTE:
+
+
+PERFIL DO CLIENTE:
+
+
+TRANSAÇÕES DO CLIENTE: 
+
+```
 ---
 
 ## Exemplo de Contexto Montado
@@ -48,8 +46,13 @@ Dados do Cliente:
 - Perfil: Moderado
 - Saldo disponível: R$ 5.000
 
-Últimas transações:
+Serviços e produtos utilizados no mês:
 - 01/11: Supermercado - R$ 450
 - 03/11: Streaming - R$ 55
-...
+
+Serviços e produtos recorrentes:
+- Streaming
+- Supermercado
+- Protetor solar
+- Passagem de ônibus
 ```
