@@ -3,39 +3,35 @@
 ## Caso de Uso
 
 ### Problema
-> Qual problema financeiro seu agente resolve?
+> A falta de organização de gastos pessoais em que o cliente não registra suas compras e, mesmo quando registra, não sabe projetar os gastos fixos e variáveis ao longo dos meses nos próximos orçamentos.
 
-[Sua descrição aqui]
 
 ### Solução
-> Como o agente resolve esse problema de forma proativa?
+> O agente entende o padrão de itens e compras que são feitas tanto pela quantidade de vezes que é cadastrado quanto perguntando se há uma frequência naquele gasto. A partir disso, ele organiza e também prevê o orçamento dos próximos meses.
 
-[Sua descrição aqui]
 
 ### Público-Alvo
-> Quem vai usar esse agente?
-
-[Sua descrição aqui]
+> Pessoas de iniciantes a com experiência mediana em organizar a vida financeira, mas que não sabem utilizar ferramentas digitais de organização, como Excel ou aplicativos voltados a isso, nem realizar projeções de gastos.
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Lyra
 
 ### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
+> O agente auxilia na organização dos gastos e prevê padrões do orçamento dos meses futuros, então sua personalidade é acessível e objetiva.
 
 [Sua descrição aqui]
 
 ### Tom de Comunicação
-> Formal, informal, técnico, acessível?
+> Amigável, objetivo, acessível
 
 [Sua descrição aqui]
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
+- Saudação: [ex: "Olá! Que gastos gostaria de cadastrar hoje?"]
 - Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
 - Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
 
@@ -73,9 +69,11 @@ flowchart TD
 - [ ] [ex: Agente só responde com base nos dados fornecidos]
 - [ ] [ex: Respostas incluem fonte da informação]
 - [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] [ex: Sempre se baseia nos padrões de gasto cadastrados pelo cliente]
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- Não acessa dados reais sensíveis e/ou dos bancos
+- Não ensina como organizar a vida financeira, apenas é uma ferramenta para otimizar a organização
+- Não explica tipos de investimentos nem indica
