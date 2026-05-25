@@ -63,7 +63,12 @@ data,descricao,categoria,valor,tipo
 2025-10-25,Combustível,transporte,250.00,saida
 
 HITÓRICO DE ATENDIMENTO DO CLIENTE:
-
+data,canal,tema,resumo,resolvido
+2025-09-15,chat,Streamng,Cliente perguntou sobre gastos e prazos das assinaturas,sim
+2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
+2025-10-01,chat,Reserva Mensal,Cliente pediu explicação sobre quanto deveria destinar à reserva mensal,sim
+2025-10-12,chat,Reserva Mensal,Cliente acompanhou o progresso da reserva mensal,sim
+2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
 
 ```
 ---
