@@ -87,10 +87,10 @@ Oi Lyra! Como foi meu mês financeiramente?
 
 **Agente:**
 ```
-Olá, Júlia! 😊 Aqui está um resumo do seu outubro:
+Olá, Júlia! Aqui está um resumo do seu outubro:
 
-💰 Receita: R$ 5.000,00
-💸 Total gasto até agora: R$ 2.488,90
+Receita: R$ 5.000,00
+Total gasto até agora: R$ 2.488,90
 
 Distribuição por categoria:
 - Moradia: R$ 1.380,00 (aluguel + luz)
@@ -100,7 +100,7 @@ Distribuição por categoria:
 - Lazer: R$ 55,90 (Netflix)
 
 Saldo restante: R$ 2.511,10
-Meta de reserva mensal: R$ 500,00 ✅ Viável!
+Meta de reserva mensal: R$ 500,00 - Viável!
 
 Você está dentro do seu orçamento de R$ 4.000,00. Quer que eu faça uma projeção para novembro com base nesses gastos?
 ```
@@ -112,12 +112,12 @@ Você está dentro do seu orçamento de R$ 4.000,00. Quer que eu faça uma proje
 
 **Usuário:**
 ```
-Acabei de comprar protetor solar por R$ 89,00. Pode registrar?
+Acabei de comprar protetor solar por R$ 45,00. Pode registrar?
 ```
 
 **Agente:**
 ```
-Anotado! R$ 89,00 em protetor solar, categoria: saúde/beleza 🧴
+Anotado! R$ 45,00 em protetor solar, categoria: saúde/beleza
 
 Uma pergunta: essa compra costuma se repetir todo mês ou acontece de vez em quando? Pergunto porque, se for recorrente, vou incluí-la nas projeções dos próximos meses. Isso vai deixar seu orçamento futuro mais preciso!
 ```
@@ -135,19 +135,20 @@ Como deve ser meu orçamento de novembro?
 ```
 Com base no padrão do seu outubro, aqui está minha projeção para novembro:
 
-📊 Gastos recorrentes identificados:
+Gastos recorrentes identificados:
 - Aluguel: R$ 1.200,00
 - Conta de Luz (estimado): R$ 180,00
 - Supermercado: R$ 450,00
 - Netflix: R$ 55,90
 - Academia: R$ 99,00
-- Protetor solar*: R$ 89,00
+- Protetor solar*: R$ 45,00
 
 *Considerado recorrente conforme sua confirmação.
 
-💡 Total estimado de fixos: R$ 2.073,90
-💡 Margem para variáveis (transporte, restaurante, etc.): R$ 1.426,10
-✅ Meta de reserva: R$ 500,00
+Salário: R$ 5.000
+Total estimado de fixos: R$ 2.117,90
+Margem para variáveis (transporte, restaurante, etc.): R$ 2382,10
+Meta de reserva: R$ 500,00
 
 Observação: esses valores são estimativas com base no histórico. Eventos inesperados podem alterar o resultado. Quer ajustar algum valor antes de fecharmos a projeção?
 ```
@@ -208,5 +209,5 @@ Posso fazer uma análise completa de outubro ou projetar novembro com os dados q
 - Adicionado fluxo de interação esperado no system prompt: sem essa instrução, o agente tendia a responder de forma muito direta sem encerrar com ações proativas, o que prejudicava o engajamento do usuário.
 - Incluídos exemplos de Few-Shot para perguntas fora do escopo: o agente inicialmente tentava responder sobre investimentos de forma genérica; os exemplos ajudaram a fixar o redirecionamento correto.
 - Separada limitação de memória entre sessões: necessário para alinhar expectativas — sem isso, usuários poderiam esperar que a Lyra lembrasse de conversas anteriores automaticamente.
-- Tom ajustado para não ser julgativo: versões iniciais do prompt geravam respostas que comentavam negativamente sobre gastos com lazer; a instrução "não julgue hábitos de consumo" corrigiu isso.
+- *Tom ajustado para não ser julgativo:* versões iniciais do prompt geravam respostas que comentavam negativamente sobre gastos com lazer; a instrução "não julgue hábitos de consumo" corrigiu isso.
 - Adicionada instrução de perguntar sobre frequência de gastos: fundamental para que a Lyra consiga construir projeções realistas, já que nem todos os gastos são declarados como recorrentes pelo usuário.
