@@ -5,7 +5,7 @@
 | Arquivo | Formato | Como a Lyra utiliza? |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações e orçamento de meses futuros |
+| `perfil_cliente.json` | JSON | Personalizar recomendações e orçamento de meses futuros |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente com histórico de compra de cada um |
 
 
@@ -24,9 +24,6 @@
 ### Como os dados são usados no prompt?
 
 ``` text
-
-DADOS DO CLIENTE:
-
 
 PERFIL DO CLIENTE:
 {
@@ -64,6 +61,10 @@ data,descricao,categoria,valor,tipo
 2025-10-15,Conta de Luz,moradia,180.00,saida
 2025-10-20,Academia,saude,99.00,saida
 2025-10-25,Combustível,transporte,250.00,saida
+
+HITÓRICO DE ATENDIMENTO DO CLIENTE:
+
+
 ```
 ---
 
@@ -73,13 +74,15 @@ data,descricao,categoria,valor,tipo
 
 ```
 Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
+- Nome: Julia Silva
 - Saldo disponível: R$ 5.000
+- Orçamento requerido: R$ 4.000
+- Valor para reserva mensal: R$ 500
 
 Serviços e produtos utilizados no mês:
 - 01/11: Supermercado - R$ 450
 - 03/11: Streaming - R$ 55
+- 06/11: Protetor solar - R$ 45
 
 Serviços e produtos recorrentes:
 - Streaming
