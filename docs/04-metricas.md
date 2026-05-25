@@ -58,12 +58,6 @@ Após os testes, registre suas conclusões:
 **O que pode melhorar:**
 - [Liste aqui]
 
----
-
-## Métricas Avançadas (Opcional)
-
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
-
 - Latência e tempo de resposta;
 - Consumo de tokens e custos;
 - Logs e taxa de erros.
