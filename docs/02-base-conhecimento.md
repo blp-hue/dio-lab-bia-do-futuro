@@ -29,7 +29,28 @@ DADOS DO CLIENTE:
 
 
 PERFIL DO CLIENTE:
-
+{
+  "nome": "Julia Silva",
+  "idade": 32,
+  "profissao": "Analista de Sistemas",
+  "renda_mensal": 5000.00,
+  "orçamento_mensal": 4000.00,
+  "meta_de_reserva_mensal": 500.00,
+  "metas": [
+    {
+      "meta": "Organizar orçamento mensal",
+      "valor_necessario": 4000
+    },
+    {
+      "meta": "Projeção de gastos com skincare",
+      "valor_necessario": 300
+    },
+    {
+      "meta": "Depósito mensal de reserva",
+      "valor_necessário": 500
+    }
+  ]
+}
 
 TRANSAÇÕES DO CLIENTE: 
 data,descricao,categoria,valor,tipo
