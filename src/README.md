@@ -6,26 +6,32 @@ Esta pasta contém o código do seu agente financeiro.
 
 ```
 src/
-├── app.py              # Aplicação principal (Streamlit/Gradio)
-├── agente.py           # Lógica do agente
-├── config.py           # Configurações (API keys, etc.)
-└── requirements.txt    # Dependências
+├── app.py                    # Interface Streamlit (chat + sidebar)
+├── agente.py                 # Carregamento de dados + system prompt + Ollama
+├── config.py                 # URL, modelo e caminhos configuráveis
+├── requirements.txt          # streamlit, pandas, requests
+
 ```
 
 ## Exemplo de requirements.txt
 
 ```
 streamlit
-openai
-python-dotenv
+pandas
+requests
 ```
 
 ## Como Rodar
 
 ```bash
-# Instalar dependências
+# 1. Instalar dependências
 pip install -r requirements.txt
 
-# Rodar a aplicação
+# 2. Garantir que o Ollama está rodando
+ollama serve
+ollama pull llama3   # só na primeira vez
+
+# 3. Entrar na pasta e rodar
+cd src
 streamlit run app.py
 ```
